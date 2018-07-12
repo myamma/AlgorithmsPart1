@@ -8,12 +8,10 @@ public class Permutation {
 		RandomizedQueue<String> RQ = new RandomizedQueue<> ();
 		
 		while (!StdIn.isEmpty()) {
-//			StdOut.println(StdIn.readString());
 			RQ.enqueue(StdIn.readString());
 		}
 		
 		numToPrint = Integer.parseInt(args[0]); 
-//		StdOut.println(numToPrint);
 		
 		while (numToPrint > 0) {
 			StdOut.println(RQ.dequeue());
